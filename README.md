@@ -1,10 +1,10 @@
 # Skynthesis releases
 
-Disk images and the update feed for **Skynthesis**, the Serum 2 skin editor
-for macOS. Nothing else lives here.
+This repository is the **JSON-only update pointer** for copies of Skynthesis
+that still look at GitHub (0.2.x). It does **not** host disk images.
 
-- Each release carries `Skynthesis-<version>.dmg` (notarized, stapled) and
-  `latest.json`, the feed the app reads from the release tagged *latest*.
-- The app checks the feed from its own menu ("Check for Updates…") and, when
-  the checkbox is on, once a day.
-- The DMG's SHA-256 is in `latest.json`; the app verifies it before installing.
+- First downloads: [waitlist](https://skynthesis-updates.my-predictunify.workers.dev/)
+- In-app updates (0.3.0+): `https://skynthesis-updates.my-predictunify.workers.dev/latest.json`
+- Each GitHub release here carries only `latest.json`, pointing at the Worker.
+
+Do not attach `Skynthesis-*.dmg` to these releases.
